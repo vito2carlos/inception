@@ -6,7 +6,7 @@ EXPOSE 3306
 
 RUN sed -i '30s/127.0.0.1/0.0.0.0/g'  /etc/mysql/mariadb.conf.d/50-server.cnf
 
-COPY setup-database.sh /
+COPY tools/setup-database.sh /
 
 RUN chmod +x /setup-database.sh
 

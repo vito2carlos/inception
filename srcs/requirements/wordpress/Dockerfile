@@ -19,7 +19,7 @@ RUN mv wordpress/* .
 
 RUN chmod -R 777 .
 
-COPY ./script.sh .
+COPY ./tools/script.sh .
 
 RUN chmod +x script.sh
 
